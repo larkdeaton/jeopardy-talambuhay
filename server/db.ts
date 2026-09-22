@@ -1,26 +1,28 @@
 import type { PlayerData, Question } from '$lib/index';
 
 const playerData: PlayerData[] = [];
-const TIME_LEFT = 8; // seconds
+const TIME_LEFT = 10; // seconds
 const sortQuestions = (questions: { points: number; question: string; answer: string; imgSrc?: string; }[]) => questions.sort((a, b) => a.points - b.points).map(q => ({ ...q, answered: false, buzzers: [] as string[] }));
 const pastQuestions: Question[] = sortQuestions([
     {
         points: 100,
-        question: 'What US state is the Land of Lincoln?',
-        answer: 'Illinois',
+        question: 
+            'Which state flag is this',
+        imgSrc: "https://cdn.britannica.com/14/3014-050-17B84006/flag-New-York-color-uniforms-facings-American-1909.jpg",
+        answer: 'New York',
     },
     {
         points: 200,
         question:
             'Which country\'s flag is this?',
-        imgSrc: "https://cdn.britannica.com/34/4034-050-91EE1BCF/Flag-Myanmar.jpg",
-        answer: 'Myanmar',
+        imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFKh90UXUZ4j0sMlcRM9zBGwCPihvd-WA8WDq3cZy23A&s=10",
+        answer: 'Scotland',
     },
     {
         points: 300,
         question:
-            'What Ivy League school has the highest Native American enrollment (a whoppping 1%)?',
-        answer: 'Dartmouth',
+            'lalalalalalalalalalalalalalala',
+        answer: 'Dartmouth'
     },
     {
         points: 400,
@@ -34,22 +36,22 @@ const presentQuestions: Question[] =
         {
             points: 400,
             question:
-                'This is Donu, a character from which video game?',
-            imgSrc: '/donu-gif.gif',
-            answer: 'Slay the Spire',
+            'What type of tea is in the image below?',
+            imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhvJCPCCQSMUqcbE5RqKimF3pD-ZZHhAHuomg3AOfGgA&s=10',
+            answer: 'Earl Grey',
         },
         {
             points: 100,
             question:
-                'Tahini is made from which seed?',
+                '',
             imgSrc: 'https://www.aforkstale.com/wp-content/uploads/how-to-make-homemade-tahini-1200-x-1200.jpg',
             answer: 'Sesame',
         },
         {
             points: 200,
-            question: 'What programming language is the below code?',
-            imgSrc: '/programming_language.png',
-            answer: 'Javascript',
+            question: 'What type of dog is this',
+            imgSrc: 'bernese.jpg',
+            answer: 'Bernese Mountain Dog',
         },
         {
             points: 300,
@@ -68,21 +70,31 @@ const futureQuestions: Question[] = sortQuestions([
         imgSrc:
             "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
         answer: 'Isometric',
+    },
+    {
+
+        points: 200,
+        question:
+            'What type of model is shown in the picture below',
+        imgSrc:
+            "Random_forest.webp",
+        answer: 'Random forest',
     }
+   
 ]);
 
 
 const categories = [
     {
-        title: 'Ms Feng\'s Past',
+        title: "Lark's Past",
         questions: pastQuestions
     },
     {
-        title: `Ms. Feng's Present`,
+        title: "Lark's Present",
         questions: presentQuestions
     },
     {
-        title: "Ms. Feng's Future",
+        title: "Lark's Future",
         questions: futureQuestions
     }
 ];
