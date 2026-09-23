@@ -7,7 +7,7 @@ const pastQuestions: Question[] = sortQuestions([
     {
         points: 100,
         question: 
-            'Which state flag is this',
+            'Which state flag is this?',
         imgSrc: "https://cdn.britannica.com/14/3014-050-17B84006/flag-New-York-color-uniforms-facings-American-1909.jpg",
         answer: 'New York',
     },
@@ -21,13 +21,14 @@ const pastQuestions: Question[] = sortQuestions([
     {
         points: 300,
         question:
-            'lalalalalalalalalalalalalalala',
-        answer: 'Dartmouth'
+            'What type of bird is this?',
+        imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToTY6W3H0-4LlSOEAJ3C_xh_4A9zSz3ggZKgjWN1GM0g&s=10",
+        answer: 'Lark'
     },
     {
         points: 400,
-        question: 'Who wrote the Critique of Pure Reason?',
-        answer: 'Immanuel Kant',
+        question: 'What do you think my first word was?',
+        answer: 'dog',
     }
 ]);
 
@@ -43,9 +44,9 @@ const presentQuestions: Question[] =
         {
             points: 100,
             question:
-                '',
-            imgSrc: 'https://www.aforkstale.com/wp-content/uploads/how-to-make-homemade-tahini-1200-x-1200.jpg',
-            answer: 'Sesame',
+                'What type of plant is this (generally, I don\'t need the species)',
+            imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlTT683hell_7DeUUfPdmMIILLvrY3q9pSPDF4I27aJQ&s=10',
+            answer: 'Bonsai',
         },
         {
             points: 200,
@@ -56,26 +57,29 @@ const presentQuestions: Question[] =
         {
             points: 300,
             question:
-                'This country is home to the Dolomites, which are a mountain range that has historical \'via ferratas\', iron cables and rungs, to aid traversing the peaks?',
+                'In France, what flower is most often associated with luck?',
             imgSrc:
-                "https://laguidalpina.it/cdn/shop/products/ferrata-marmolada-cresta-ovest-Cristiano-Gregnanin-Guida-Alpina-Certificata-Dolomiti-5.jpg?v=1738870778",
-            answer: 'Italy',
-        }
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4kw77z4QIZ1sSKSIC1uk5M4pJwTucJR4ueG_NM_d5Q&s=10",
+                answer: 'Lily of the Valley',
+        },
+    
+        
+      
+     
+
     ]);
 const futureQuestions: Question[] = sortQuestions([
     {
         points: 100,
         question:
-            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
-        imgSrc:
-            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
-        answer: 'Isometric',
+            'What year am I graduating?',
+        answer: '2029',
     },
     {
 
         points: 200,
         question:
-            'What type of model is shown in the picture below',
+            'What type of machine learning model is shown in the picture below?',
         imgSrc:
             "Random_forest.webp",
         answer: 'Random forest',
