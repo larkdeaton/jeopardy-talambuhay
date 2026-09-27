@@ -77,13 +77,30 @@ const futureQuestions: Question[] = sortQuestions([
     },
     {
 
-        points: 200,
+        points: 400,
         question:
             'What type of machine learning model is shown in the picture below?',
         imgSrc:
             "Random_forest.webp",
         answer: 'Random forest', //I just started learing how to make machine learning models, and doing competitions on kaggle to practice data science and machine learning
+    },
+    {
+
+        points: 200,
+        question:
+            'What is the only type of paint with no white shade?',
+    
+        answer: 'Watercolor', //I'm trying to learn how to watercolor, hopefully ill get better in the future
+    },
+    {
+
+        points: 300,
+        question:
+            'What is the name of John Le Carre\'s most famous work before Tinker, Tailor, Soldier, Spy?',
+    
+        answer: 'The spy that came in from the cold', //I just bought this book, and i'm just starting to read it, hopefully it'll be good
     }
+ 
    
 ]);
 
